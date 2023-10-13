@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadelMatch - Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/login.js" type="module"></script>
+    
+</head>
+<body>
+
+    <!-- HEADER -->
+   <header>
+    <img src="./assets/padelmatch.svg" alt="PadelMatch Logo">
+    <p class="header-heading">- Login</p>
+    </header>
+
+    <!-- Login Form -->
+    <section class="login-container">
+        <div class="login-container-inner">
+            <form class="login-form">
+                <h2>Login</h2>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" minlength="5" maxlength="40">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" minlength="6" maxlength="20">
+                </div>
+                <input type="submit" value="Login" class="login-btn">
+                <p class="notSuccess hidden">User doesn't exist.</p>
+            </form>
+            <p>New User?</p>
+            <button class="sign-up-btn">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Sign Up form Modal -->
+    <section class="sign-up-modal hidden">
+        <div class="login-container">
+            <div class="login-container-inner">
+                <form class="sign-up-form">
+                    <h2>Sign Up</h2>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="emailModal" id="emailModal" minlength="5" maxlength="40">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="passwordModal" id="passwordModal" minlength="6" maxlength="20">
+                    </div>
+                    <input type="submit" value="Sign Up" class="sign-up-final-btn">
+                </form>
+                <i class="fa fa-times-circle fa-2x close-signup-modal" aria-hidden="true"></i>
+                <p class="success hidden">Your user is created!</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
